@@ -6,6 +6,7 @@ set expandtab
 set smarttab
 set t_Co=256
 
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 call plug#begin('~/.vim/plugged')
 Plug 'python-mode/python-mode'
 Plug 'scrooloose/nerdtree'
