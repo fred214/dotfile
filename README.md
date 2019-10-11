@@ -9,7 +9,8 @@ ln -s .tmux.conf ~/.tumux.conf
 ## Vim
 ### Install vim-plugin
 ```
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # vim
 :PlugInstall
@@ -83,7 +84,7 @@ prefix Ctrl-r           # reload tmux session from local file
 
 ## Xshell
 If use xshell, no need use vim color plugin
-** Remember enable xterm 256 color **
+>Remember enable xterm 256 color
 ```
 https://github.com/netsarang/Xshell-ColorScheme
 http://terminal.sexy
