@@ -2,14 +2,20 @@
 
 ## Make link 
 ```
-ln -s .vimrc ~/.vimrc
-ln -s .tmux.conf ~/.tumux.conf
+ln -sf .vimrc ~/.vimrc
+ln -sf .tmux.conf ~/.tumux.conf
+ln -sf init.vim ~/.config/nvim/init.vim
 ```
 
-## Vim
+## Vim-plugin
 ### Install vim-plugin
 ```
+# for vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# for neovim
+curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # vim

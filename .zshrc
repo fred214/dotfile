@@ -9,8 +9,8 @@ export ZSH="/home/fred/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
-#ZSH_THEME="ys"
-ZSH_THEME="bira"
+ZSH_THEME="ys"
+#ZSH_THEME="bira"
 #ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
@@ -108,8 +108,8 @@ source $ZSH/oh-my-zsh.sh
 #alias dict=youdao-dict
 alias cl=clear
 
-export PATH="$PATH:/home/fred/.scripts"
-export VISUAL="vim"
+#export PATH="$PATH:/home/fred/.scripts"
+#export VISUAL="vim"
 #export TERM=xterm-256color
 
 cd ~
