@@ -71,7 +71,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git z)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,7 +106,10 @@ source $ZSH/oh-my-zsh.sh
 #alias chrome=google-chrome-stable
 #alias music=netease-cloud-music
 #alias dict=youdao-dict
-alias cl=clear
+alias c=clear
+alias n=neofetch
+alias vi=nvim
+alias vim=nvim
 
 #export PATH="$PATH:/home/fred/.scripts"
 #export VISUAL="vim"
