@@ -108,8 +108,9 @@ source $ZSH/oh-my-zsh.sh
 #alias dict=youdao-dict
 alias c=clear
 alias n=neofetch
-alias vi=nvim
+#alias vi=nvim
 alias vim=nvim
+alias nvi=nvim
 
 #export PATH="$PATH:/home/fred/.scripts"
 #export VISUAL="vim"
