@@ -19,7 +19,10 @@ nnoremap <A-a> :w<CR>:source ~/.config/nvim/init.vim<CR>:q<CR>
 inoremap <A-a> <ESC>:w<CR>:source ~/.config/nvim/init.vim<CR>:q<CR>
 nnoremap <A-t> :vsp<CR>:term zsh<CR>i
 
-
+noremap <A-h> <C-w>h
+noremap <A-j> <C-w>j
+noremap <A-k> <C-w>k
+noremap <A-l> <C-w>l
 
 " Compile function
 noremap <A-r> :call CompileRun()<CR>
@@ -106,7 +109,8 @@ noremap <A-n> :NERDTreeToggle<CR>
 " au BufWinLeave *.* mkview
 " au BufWinEnter *.* silent loadview
 
-
+" coc
+set signcolumn=yes
 
 
 color deus
