@@ -108,13 +108,14 @@ source $ZSH/oh-my-zsh.sh
 #alias dict=youdao-dict
 alias c=clear
 alias n=neofetch
-#alias vi=nvim
+alias vi=nvim
 alias vim=nvim
 alias nvi=nvim
 
 #export PATH="$PATH:/home/fred/.scripts"
 #export VISUAL="vim"
-#export TERM=xterm-256color
+# tmux doesn't show line number if not set this option
+export TERM=xterm-256color
 
-cd ~
+#cd ~
 

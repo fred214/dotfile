@@ -1,15 +1,22 @@
 
 
 set splitright
-
-
+"set paste
+set ts=4
+set sw=4
+set expandtab
+set autoindent
+"set number
 
 let mapleader=" "
 
 nnoremap <A-q> :q<CR>
+nnoremap <A-s>  :w<CR>
+inoremap <A-s>  <ESC>:w<CR>
 
 nnoremap <A-e> :vsp ~/.config/nvim/init.vim<CR>
-nnoremap <A-s> :w<CR>:source ~/.config/nvim/init.vim<CR>:q<CR>
+nnoremap <A-a> :w<CR>:source ~/.config/nvim/init.vim<CR>:q<CR>
+inoremap <A-a> <ESC>:w<CR>:source ~/.config/nvim/init.vim<CR>:q<CR>
 nnoremap <A-t> :vsp<CR>:term zsh<CR>i
 
 
@@ -19,14 +26,13 @@ noremap <A-r> :call CompileRun()<CR>
 func! CompileRun()
 	exec "w"
 	if &filetype == 'python'
-		set splitbelow
-		:sp
-		resize 10
+		"set splitbelow
+		":sp
+		"resize 10
+        :vs
 		:term python3 %
 	endif
 endfunc
-
-
 
 
 call plug#begin('~/.vim/plugged')
@@ -36,6 +42,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'liuchengxu/eleline.vim'
 " Plug 'bling/vim-bufferline'
 Plug 'ajmwagar/vim-deus'
+Plug 'preservim/nerdcommenter'
 
 Plug 'Vimjas/vim-python-pep8-indent', { 'for' :['python', 'vim-plug'] }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -86,3 +93,5 @@ endfunction
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 color deus
+
+set number

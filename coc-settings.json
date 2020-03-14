@@ -4,9 +4,6 @@
 	],
 
 	"python.jediEnabled": false,
-	"python.formatting.provider": "yapf",
-	"python.formatting.yapfArgs": [
-		"--sytle",
-		"{SPACES_AROUND_POWER_OPERATOR: True, SPACES_BEFORE_COMMENT: 1}"
-	]
+	"python.formatting.provider": "yapf"
 }
+
