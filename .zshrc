@@ -111,11 +111,14 @@ alias n=neofetch
 alias vi=nvim
 alias vim=nvim
 alias nvi=nvim
+alias tpl="tmuxp load"
 
 #export PATH="$PATH:/home/fred/.scripts"
 #export VISUAL="vim"
 # tmux doesn't show line number if not set this option
 export TERM=xterm-256color
 
+# tmuxp 
+export DISABLE_AUTO_TITLE='true'
 #cd ~
 

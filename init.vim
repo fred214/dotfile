@@ -6,7 +6,7 @@ set ts=4
 set sw=4
 set expandtab
 set autoindent
-"set number
+set number
 
 let mapleader=" "
 
@@ -43,6 +43,7 @@ Plug 'liuchengxu/eleline.vim'
 " Plug 'bling/vim-bufferline'
 Plug 'ajmwagar/vim-deus'
 Plug 'preservim/nerdcommenter'
+Plug 'preservim/nerdtree'
 
 Plug 'Vimjas/vim-python-pep8-indent', { 'for' :['python', 'vim-plug'] }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -92,6 +93,20 @@ endfunction
 " Highlight the symbol and its references when holding the cursor.
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
-color deus
+" NerdComment
+let g:NERDSpaceDelims = 1
 
-set number
+" NerdTree
+noremap <A-n> :NERDTreeToggle<CR>
+
+" reopening a file and jump to the last position when
+au BufWinLeave *.* mkview
+au BufWinEnter *.* silent loadview
+" confict with startify
+
+
+
+
+
+
+color deus

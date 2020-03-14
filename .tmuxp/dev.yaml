@@ -1,0 +1,11 @@
+---
+session_name: dev
+start_directory: '~'
+windows:
+    - windows_name: develop
+      layout: main-vertical
+      options:
+          main-pane-width: 30
+      panes:
+          - blank
+          - blank
