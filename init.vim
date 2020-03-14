@@ -44,6 +44,8 @@ Plug 'liuchengxu/eleline.vim'
 Plug 'ajmwagar/vim-deus'
 Plug 'preservim/nerdcommenter'
 Plug 'preservim/nerdtree'
+Plug 'farmergreg/vim-lastplace'
+Plug 'Yggdroot/indentLine'
 
 Plug 'Vimjas/vim-python-pep8-indent', { 'for' :['python', 'vim-plug'] }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -95,18 +97,19 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " NerdComment
 let g:NERDSpaceDelims = 1
+let g:NERDDefaultAlign = 'left'
 
 " NerdTree
 noremap <A-n> :NERDTreeToggle<CR>
 
 " reopening a file and jump to the last position when
-au BufWinLeave *.* mkview
-au BufWinEnter *.* silent loadview
-" confict with startify
-
-
+" au BufWinLeave *.* mkview
+" au BufWinEnter *.* silent loadview
 
 
 
 
 color deus
+
+
+

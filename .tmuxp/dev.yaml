@@ -4,8 +4,8 @@ start_directory: '~'
 windows:
     - windows_name: develop
       layout: main-vertical
-      options:
-          main-pane-width: 30
+      # options:
+      #     main-pane-width: 30
       panes:
           - blank
           - blank
