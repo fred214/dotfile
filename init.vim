@@ -56,7 +56,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
-let g:coc_global_extensions = ['coc-json','coc-python']
+let g:coc_global_extensions = ['coc-json','coc-python','coc-pairs','coc-eslint','coc-prettier']
 
 
 " use <tab> for trigger completion and navigate to the next complete item
@@ -98,9 +98,15 @@ endfunction
 " Highlight the symbol and its references when holding the cursor.
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
+" autoformat javascript
+" https://github.com/neoclide/coc-prettier/issues/1
+autocmd BufWritePre *.js CocCommand prettier.formatFile
+
+
 " NerdComment
 let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = 'left'
+" let g:NERDCompactSexyComs = 1
 
 " NerdTree
 noremap <A-n> :NERDTreeToggle<CR>

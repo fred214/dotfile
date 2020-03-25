@@ -124,3 +124,6 @@ export TERM=xterm-256color
 export DISABLE_AUTO_TITLE='true'
 #cd ~
 
+source ~/.credential
+
+
