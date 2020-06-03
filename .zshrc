@@ -114,6 +114,7 @@ alias vi=nvim
 alias vim=nvim
 alias nvi=nvim
 alias tpl="tmuxp load"
+alias kb="kubectl"
 
 #export PATH="$PATH:/home/fred/.scripts"
 #export VISUAL="vim"
@@ -124,6 +125,7 @@ export TERM=xterm-256color
 export DISABLE_AUTO_TITLE='true'
 #cd ~
 
-source ~/.credential
+#source ~/.credential
 
-
+export PATH=$PATH:/usr/local/go/bin
+export GOPROXY=https://goproxy.cn
