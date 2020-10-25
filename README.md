@@ -22,7 +22,17 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 ## Vim
 ### Install neovim
 ```
-sudo zyyper in neovim
+# sudo zyyper in neovim
+
+# https://github.com/AppImage/AppImageKit/wiki/FUSE
+sudo zypper in fuse
+sudo usermod -a -G trusted `whoami`
+re-logon
+
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+mv nvim.appimage nvim
+mv nvim /usr/local/bin
 ```
 ### Install vim-plugin
 ```
