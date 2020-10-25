@@ -7,6 +7,7 @@ set sw=4
 set expandtab
 set autoindent
 set number
+set paste
 
 let mapleader=" "
 

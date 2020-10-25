@@ -11,8 +11,8 @@ export ZSH="/home/fred/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="ys"
-# ZSH_THEME="bira"
+#ZSH_THEME="ys"
+ZSH_THEME="bira"
 # ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
@@ -125,7 +125,12 @@ export TERM=xterm-256color
 export DISABLE_AUTO_TITLE='true'
 #cd ~
 
-#source ~/.credential
+source ~/.credential
 
-export PATH=$PATH:/usr/local/go/bin
+export GOROOT=/usr/local/go
+export GOPATH=~/go
+export PATH=$PATH:$GOPATH/bin:$GOROOT/bin:/usr/local/kubebuilder/bin
+export GO111MODULE=on
 export GOPROXY=https://goproxy.cn
+
+. "/home/fred/.acme.sh/acme.sh.env"
