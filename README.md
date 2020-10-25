@@ -2,7 +2,7 @@
 
 ## Make link 
 ```
-ln -sf $(pwd)/.vimrc ~/.vimrc
+ln -sf $(pwd)/.zshrc ~/.zshrc
 ln -sf $(pwd)/.tmux.conf ~/.tumux.conf
 ln -sf $(pwd)/init.vim ~/.config/nvim/init.vim
 ```
