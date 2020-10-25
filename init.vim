@@ -54,6 +54,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'Vimjas/vim-python-pep8-indent', { 'for' :['python', 'vim-plug'] }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 call plug#end()
 

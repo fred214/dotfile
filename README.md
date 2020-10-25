@@ -50,6 +50,9 @@ curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
 cd /root/.vim/plugged/python-mode
 git submodule update --init --recursive
 git submodule status
+
+# for coc
+sudo zypper in nodejs
 ```
 
 ### Enable xterm 256 color
