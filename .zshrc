@@ -125,7 +125,7 @@ export TERM=xterm-256color
 export DISABLE_AUTO_TITLE='true'
 #cd ~
 
-source ~/.credential
+#source ~/.credential
 
 export GOROOT=/usr/local/go
 export GOPATH=~/go
@@ -133,4 +133,4 @@ export PATH=$PATH:$GOPATH/bin:$GOROOT/bin:/usr/local/kubebuilder/bin
 export GO111MODULE=on
 export GOPROXY=https://goproxy.cn
 
-. "/home/fred/.acme.sh/acme.sh.env"
+#. "/home/fred/.acme.sh/acme.sh.env"
