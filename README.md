@@ -3,7 +3,7 @@
 ## Make link 
 ```
 ln -sf $(pwd)/.zshrc ~/.zshrc
-ln -sf $(pwd)/.tmux.conf ~/.tumux.conf
+ln -sf $(pwd)/.tmux.conf ~/.tmux.conf
 ln -sf $(pwd)/init.vim ~/.config/nvim/init.vim
 ```
 
@@ -73,7 +73,7 @@ set t_Co=256
 
 ## Tmux
 
-### Install tumx
+### Install tmux
 ```
 # Do not use yum install for tmux, the version do not support source operation
 
@@ -90,11 +90,11 @@ sh autogen.sh
 source .bash_profile
 ```
 
-### Install tumx plugin
+### Install tmux plugin
 ```
 # in the tmux
 
-# install tmp firstly
+# install tpm firstly
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # update tmux config

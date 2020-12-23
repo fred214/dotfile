@@ -1,0 +1,8 @@
+font:
+  size: 16
+
+background_opacity: 0.8
+
+key_bindings:
+  - { key: LBracket, mods: Control, action: Copy}
+  - { key: RBracket, mods: Control, action: Paste}

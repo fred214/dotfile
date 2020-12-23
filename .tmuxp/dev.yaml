@@ -3,9 +3,16 @@ session_name: dev
 start_directory: '~'
 windows:
     - windows_name: develop
-      layout: main-vertical
+      #layout: main-vertical
       # options:
       #     main-pane-width: 30
+      layout: main-horizontal
+      options:
+        main-pane-height: 50
       panes:
-          - blank
-          - blank
+          #- blank
+          #- blank
+          - shell_command:
+            - clear
+            focus: true
+          - pane
