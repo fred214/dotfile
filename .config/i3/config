@@ -184,7 +184,8 @@ bar {
 
 bindsym $mod+Return exec alacritty
 exec --no-startup-id vmware-user-suid-wrapper
-exec --no-startup-id compton -b
-exec --no-startup-id feh --bg-fil ~/data/background/r25x6m.png
+#exec --no-startup-id xrandr --output Virtual1 --mode 1280x960
+exec_always --no-startup-id feh --randomize --bg-fil ~/data/background
+#exec --no-startup-id compton -b # vmware 3D accelerate has issue with resolustion
 new_window none
 gaps inner 15
