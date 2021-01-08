@@ -1,7 +1,7 @@
 font:
   size: 16
 
-background_opacity: 0.9
+#background_opacity: 0.9
 
 key_bindings:
   - { key: LBracket, mods: Control, action: Copy}

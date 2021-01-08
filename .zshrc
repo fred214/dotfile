@@ -120,13 +120,13 @@ alias kb="kubectl"
 #export VISUAL="vim"
 # tmux doesn't show line number if not set this option
 export TERM=xterm-256color
-export TERMINAL=alacritty
+#export TERMINAL=alacritty
 
 # tmuxp 
 export DISABLE_AUTO_TITLE='true'
 #cd ~
 
-#source ~/.credential
+source ~/.credential
 
 export GOROOT=/usr/local/go
 export GOPATH=~/go
