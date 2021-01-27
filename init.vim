@@ -1,5 +1,4 @@
 
-
 set splitright
 "set paste
 set ts=4
@@ -19,6 +18,7 @@ nnoremap <A-e> :vsp ~/.config/nvim/init.vim<CR>
 nnoremap <A-a> :w<CR>:source ~/.config/nvim/init.vim<CR>:q<CR>
 inoremap <A-a> <ESC>:w<CR>:source ~/.config/nvim/init.vim<CR>:q<CR>
 nnoremap <A-t> :vsp<CR>:term zsh<CR>i
+inoremap <A-t> :vsp<CR>:term zsh<CR>i
 
 noremap <A-h> <C-w>h
 noremap <A-j> <C-w>j
@@ -46,6 +46,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'liuchengxu/eleline.vim'
 " Plug 'bling/vim-bufferline'
 Plug 'ajmwagar/vim-deus'
+Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'preservim/nerdcommenter'
 Plug 'preservim/nerdtree'
 Plug 'farmergreg/vim-lastplace'
@@ -120,8 +121,11 @@ noremap <A-n> :NERDTreeToggle<CR>
 " coc
 set signcolumn=yes
 
-
-color deus
+"set termguicolors
+"set background=dark
+"color deus
+color hybrid_reverse
+"color hybrid_material
 
 
 

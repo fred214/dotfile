@@ -13,7 +13,7 @@ export ZSH="/home/fred/.oh-my-zsh"
 #ZSH_THEME="robbyrussell"
 ZSH_THEME="ys"
 #ZSH_THEME="bira"
-#ZSH_THEME="agnoster"
+# ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -115,6 +115,9 @@ alias vim=nvim
 alias nvi=nvim
 alias tpl="tmuxp load"
 alias kb="kubectl"
+alias ko="kubectl --kubeconfig=/home/fred/.kube/orc"
+alias kh="kubectl --kubeconfig=/home/fred/.kube/haas"
+alias kd="kubectl --kubeconfig=/home/fred/.kube/hdl"
 
 #export PATH="$PATH:/home/fred/.scripts"
 #export VISUAL="vim"
@@ -134,4 +137,9 @@ export PATH=$PATH:$GOPATH/bin:$GOROOT/bin:/usr/local/kubebuilder/bin
 export GO111MODULE=on
 export GOPROXY=https://goproxy.cn
 
+export PATH=$PATH:~/groovy/groovy-3.0.6/bin
+
 #. "/home/fred/.acme.sh/acme.sh.env"
+unsetopt share_history
+unsetopt inc_append_history
+
