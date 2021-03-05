@@ -50,7 +50,9 @@ Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'preservim/nerdcommenter'
 Plug 'preservim/nerdtree'
 Plug 'farmergreg/vim-lastplace'
-Plug 'Yggdroot/indentLine'
+
+" Can not work with *.json with "
+" Plug 'Yggdroot/indentLine'
 
 Plug 'Vimjas/vim-python-pep8-indent', { 'for' :['python', 'vim-plug'] }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
