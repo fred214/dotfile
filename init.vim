@@ -111,6 +111,7 @@ autocmd BufWritePre *.js CocCommand prettier.formatFile
 " NerdComment
 let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = 'left'
+let g:NERDTreeWinSize = 40 
 " let g:NERDCompactSexyComs = 1
 
 " NerdTree
