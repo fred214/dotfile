@@ -118,6 +118,10 @@ alias kb="kubectl"
 alias ko="kubectl --kubeconfig=/home/fred/.kube/orc"
 alias kh="kubectl --kubeconfig=/home/fred/.kube/haas"
 alias kd="kubectl --kubeconfig=/home/fred/.kube/hdl"
+alias kbtr="kubectl tree"
+alias kotr="kubectl tree --kubeconfig=/home/fred/.kube/orc"
+alias khtr="kubectl tree --kubeconfig=/home/fred/.kube/haas"
+alias kdtr="kubectl tree --kubeconfig=/home/fred/.kube/hdl"
 
 #export PATH="$PATH:/home/fred/.scripts"
 #export VISUAL="vim"
@@ -135,9 +139,15 @@ export GOROOT=/usr/local/go
 export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin:$GOROOT/bin:/usr/local/kubebuilder/bin
 export GO111MODULE=on
-export GOPROXY=https://goproxy.cn
+# export GOPROXY=https://goproxy.cn
+go env -w GOPROXY=https://goproxy.cn,direct
+setopt no_nomatch  # zsh will explain * itself
+go env -w GOPRIVATE=github.wdf.sap.corp
 
 export PATH=$PATH:~/groovy/groovy-3.0.6/bin
+
+# krew
+export PATH=$PATH:$HOME/.krew/bin
 
 #. "/home/fred/.acme.sh/acme.sh.env"
 unsetopt share_history
