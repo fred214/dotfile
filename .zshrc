@@ -145,6 +145,7 @@ setopt no_nomatch  # zsh will explain * itself
 go env -w GOPRIVATE=github.wdf.sap.corp
 
 export PATH=$PATH:~/groovy/groovy-3.0.6/bin
+export PATH=$PATH:/usr/local/kubebuilder/bin
 
 # krew
 export PATH=$PATH:$HOME/.krew/bin
