@@ -1,16 +1,4 @@
 {
-	"coc.preferences.formatOnSaveFiletypes":[
-		"python"
-
-	],
-
-	"python.jediEnabled": false,
-	"python.formatting.provider": "autopep8",
-
-
-    "eslint.autoFixOnSave": true,
-    "prettier.tabWidth": 4
-
-
+    "diagnostic.checkCurrentLine": true,
+    "python.pythonPath": "python3"
 }
-
